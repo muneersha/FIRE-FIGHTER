@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <io.github.controlwear.virtual.joystick.android.JoystickView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/joystickView"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            custom:JV_buttonColor="#fff"
+            custom:JV_buttonSizeRatio="15%"
+            custom:JV_borderColor="@color/white"
+            custom:JV_backgroundColor="@color/colorAccent_Translucent"
+            custom:JV_borderWidth="4dp"
+            custom:JV_fixedCenter="false"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:background="#96000000"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/temp_humid"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:backgroundTint="#000"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:background="#96000000"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/water_level"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:backgroundTint="#000"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="190dp">
+
+            <Button
+                android:id="@+id/pump_button"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:text="Pump: TURN ON"
+                android:backgroundTint="#000"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
